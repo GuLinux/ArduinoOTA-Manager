@@ -1,0 +1,27 @@
+{
+  "name": "ArduinoOTA-Manager",
+  "version": "0.0.1",
+  "description": "Small wrapper around ArduinoOTA",
+  "keywords": "ota, arduinoota",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/GuLinux/ArduinoOTA-Manager"
+  },
+  "authors":
+  [
+    {
+      "name": "Marco Gulino",
+      "email": "marco@gulinux.net",
+      "url": "https://gulinux.net",
+      "maintainer": true
+    }
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/GuLinux/ArduinoOTA-Manager",
+  "dependencies": {
+    "ArduinoLog": "jsc/ArduinoLog@^1.2.1"
+  },
+  "frameworks": "arduino",
+  "platforms": "expressif32"
+}
