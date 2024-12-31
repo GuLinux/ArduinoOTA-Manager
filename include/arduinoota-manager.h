@@ -7,9 +7,12 @@ namespace GuLinux {
 
 class ArduinoOTAManager {
 public:
-    void setup(fs::LittleFSFS *littleFS = nullptr);
+    using CloseFilesystemCB = std::function<void()>;
+    using LoggingFunc = std::function<void(const char*)>;
+    void setup(const LoggingFunc &logging, const CloseFilesystemCB &closeFS = {});
     void loop();
     static ArduinoOTAManager &Instance;
+private:
 };
 }
 #endif
