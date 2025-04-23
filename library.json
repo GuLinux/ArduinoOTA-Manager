@@ -1,6 +1,6 @@
 {
   "name": "ArduinoOTA-Manager",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Small wrapper around ArduinoOTA",
   "keywords": "ota, arduinoota",
   "repository":
@@ -23,5 +23,7 @@
     "ArduinoLog": "jsc/ArduinoLog@^1.2.1"
   },
   "frameworks": "arduino",
-  "platforms": "expressif32"
+  "platforms": [
+      "espressif32"
+  ]
 }
